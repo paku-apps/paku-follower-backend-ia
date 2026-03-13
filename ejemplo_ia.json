@@ -1,0 +1,12 @@
+{
+  "reviewText": "La app se cuelga al iniciar desde la última actualización.",
+  "app": {
+    "appName": "MiApp",
+    "rating": 4.2,
+    "description": "App de notas rápidas con sincronización en la nube.",
+    "category": "Productividad",
+    "ageRating": "Para mayores de 3 años"
+  },
+  "language": "es",
+  "tone": "friendly"
+}
