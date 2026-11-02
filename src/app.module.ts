@@ -5,6 +5,10 @@ import { envValidation } from './config/env.validation'
 import { ReviewReplyModule } from './modules/review-reply/review-reply.module'
 import { AiModule } from './modules/ai/ai.module'
 import { HealthModule } from './modules/health/health.module'
+import { DatabaseModule } from './database/database.module'
+import { UserClientModule } from './modules/user-client/user-client.module'
+import { MyAppsModule } from './modules/my-apps/my-apps.module'
+import { AppsCatalogModule } from './modules/apps-catalog/apps-catalog.module'
 
 @Module({
   imports: [
@@ -13,9 +17,13 @@ import { HealthModule } from './modules/health/health.module'
       load: [configuration],
       validate: envValidation
     }),
+    DatabaseModule,
+    AppsCatalogModule,
     AiModule,
     ReviewReplyModule,
-    HealthModule
+    HealthModule,
+    UserClientModule,
+    MyAppsModule
   ]
 })
 export class AppModule {}
